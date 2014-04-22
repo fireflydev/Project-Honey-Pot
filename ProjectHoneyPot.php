@@ -15,10 +15,10 @@ class ProjectHoneyPot {
 	const SEARCH_DOMAIN		= 'dnsbl.httpbl.org';
 	const NOT_FOUND			= '127.0.0.1';
 	
-	const SEARCH_ENGINE 	= 0;
+	const SEARCH_ENGINE 		= 0;
 	const SUSPICIOUS		= 1;
 	const HARVESTER  		= 2;
-	const COMMENT_SPAMMER	= 3;
+	const COMMENT_SPAMMER		= 3;
 
 
 	protected $access_key;
