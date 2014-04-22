@@ -20,7 +20,7 @@ $h->getThreatScore(); // returns 65
 
 $h->isSearchEngine(); // returns FALSE
 
-$h->isContentSpammer(); // returns TRUE
+$h->isCommentSpammer(); // returns TRUE
 
 $h->isSuspicious(); // returns TRUE
 
