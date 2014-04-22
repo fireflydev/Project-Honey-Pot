@@ -38,7 +38,7 @@ class ProjectHoneyPot {
 	* <code>
 	*      
 	*   $h = new ProjectHoneyPot('173.194.46.102', $apikey);
-	* 	$result = $h->isSuspicous(); // returns FALSE
+	* 	$result = $h->isSuspicious(); // returns FALSE
 	* </code>
 	*
 	* @param String $ip The IP address to be checked against the Project Honey Pot Blacklist
@@ -179,7 +179,7 @@ class ProjectHoneyPot {
 
 
 	/**
-	* Is the IP listed as well regarded search engne? IPs with no record return false by default.
+	* Is the IP listed a well-regarded search engine? IPs with no record return false by default.
 	* Example:
 	* <code>
 	*      
