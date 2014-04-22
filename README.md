@@ -10,12 +10,18 @@ Http:BL provides data back about the IP addresses of visitors to your website. D
 
 
 Ex. Inspect an IP Address and Analyze Behavior
+----------------------------------------------
 
 $h = new ProjectHoneyPot('216.152.250.148', $apikey);
 
 $h->hasRecord(); // returns TRUE
+
 $h->getThreatScore(); // returns 65
+
 $h->isSearchEngine(); // returns FALSE
+
 $h->isContentSpammer(); // returns TRUE
+
 $h->isSuspicious(); // returns TRUE
+
 $h->isHarvester(); // returns FALSE
