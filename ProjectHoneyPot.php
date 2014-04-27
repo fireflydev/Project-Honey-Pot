@@ -18,7 +18,7 @@ class ProjectHoneyPot {
 	const SEARCH_ENGINE 		= 0;
 	const SUSPICIOUS		= 1;
 	const HARVESTER  		= 2;
-	const COMMENT_SPAMMER		= 3;
+	const COMMENT_SPAMMER		= 4;
 
 
 	protected $access_key;
@@ -243,6 +243,34 @@ class ProjectHoneyPot {
 		return $engines[$this->response[2]];
 
 	}
+
+
+
+	/**
+	* Get the number of days since activity was last reported. 
+	* Returns false if no record is found.
+	* Example:
+	* <code>
+	*      
+	*   $h = new ProjectHoneyPot('64.233.173.197', $apikey);
+	* 	$result = $h->getLastActivity(); // returns 1;
+	* </code>
+	*
+	* @return Mixed 
+	*/
+	public function getLastActivity() {
+
+		if(!$this->hasRecord()) {
+			return false;
+		}
+
+
+		return $this->last_activity;
+
+	}
+
+
+
 
 	/**
 	* Return the computed hostname used for the Project Honey Pot DNS lookup. 
